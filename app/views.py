@@ -16,3 +16,7 @@ def apti_views(request):
 @login_required
 def django_views(request):
     return render (request , 'django.html')
+
+def logout_views(request):
+
+    return render (request , 'logout.html')
