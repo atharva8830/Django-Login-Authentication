@@ -23,10 +23,11 @@ from app import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.home_view),
+    path("", views.home_view, name = 'home'),
     path("java/", views.java_views),
     path("apti/", views.apti_views),
     path("django/", views.django_views),
     path("logout/", views.logout_views),
+    path("register/", views.register_view),
     path("accounts/", include('django.contrib.auth.urls')),
 ]

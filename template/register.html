@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+
+
+{% block body_block %}
+
+<div class="jumbotron">
+    <form method = 'post'> 
+        <label>
+            Username 
+            <input type="text" name="username">
+        </label>
+        <br>
+        <label>
+            password <input type="password" name="password">
+        </label>
+        <input type="submit" class="btn btn-success">
+        {% csrf_token %}
+    </form>
+</div>
+
+{% endblock body_block %}
